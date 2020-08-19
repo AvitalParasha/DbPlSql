@@ -1,0 +1,142 @@
+PL/SQL Developer Report
+
+[SQL]
+select agentId, agentName, count(*)
+from schedule natural join agent
+group by agentID, agentName
+order by count(*)
+
+[Options]
+Connect=False
+Username=
+Password=2542
+Database=
+ConnectAs=Normal
+LockMode=0
+LockedPassword=2586
+BkgColor=65535
+BkgImage=
+FormLayout=False
+OnlyNBSP=False
+LeftMargin=0
+TopMargin=0
+PageBreak=0
+AddSQL=False
+HandleTags=True
+
+[Styles]
+
+{Title}
+Enabled=True
+Name=Report Title
+Description=Num Of Appointments Per Agent
+Style=Custom...
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Param}
+Enabled=True
+Name=Variables
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Table}
+Enabled=False
+Name=Tabular Tables
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Form}
+Enabled=False
+Name=Form Tables
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Field}
+Enabled=False
+Name=Default Field
+Description=
+Style=Custom...
+HeaderStyle=Custom...
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=AGENTID
+Description=Agent ID
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=AGENTNAME
+Description=Agent Name
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=COUNT(*)
+Description=Num Of Appointments
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+
+
+[CSS]
+**4-Report Title
+{
+  Background: #FFFF00;
+  Color: #0000FF;
+  Font-size: 16pt;
+}
+
+*4-AGENTID
+{
+}
+
+*4-Default Field
+{
+  Background: #FFFF00;
+}
+
+*5-Default Field
+{
+  Background: #0000FF;
+  Color: #FFFFFF;
+}
+
+

@@ -1,0 +1,136 @@
+PL/SQL Developer Report
+
+[SQL]
+select cityName, count(*)
+from client
+group by cityName
+
+[Options]
+Connect=False
+Username=
+Password=2806
+Database=
+ConnectAs=Normal
+LockMode=0
+LockedPassword=2898
+BkgColor=-16777211
+BkgImage=C:\Users\אביטל\Downloads\ReportImg.jpg
+FormLayout=False
+OnlyNBSP=False
+LeftMargin=0
+TopMargin=0
+PageBreak=0
+AddSQL=False
+HandleTags=True
+
+[Styles]
+
+{Title}
+Enabled=True
+Name=Report Title
+Description=Number of Client per City
+Style=Custom...
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Param}
+Enabled=True
+Name=Variables
+Description=
+Style=Custom...
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Table}
+Enabled=False
+Name=Tabular Tables
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Form}
+Enabled=False
+Name=Form Tables
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Field}
+Enabled=False
+Name=Default Field
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=CITYNAME
+Description=City Name
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=COUNT(*)
+Description=Number Of Clients
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+
+
+[CSS]
+**4-Report Title
+{
+  Background: #FFFFFF;
+  Color: #FF0000;
+  Font-size: 16pt;
+}
+
+**4-Tabular Tables
+{
+  Background: #FFFFFF;
+}
+
+**4-Variables
+{
+  Background: #FFFFFF;
+}
+
+**4-Form Tables
+{
+  Background: #FFFFFF;
+  Padding: 10px;
+}
+
+*4-CITYNAME
+{
+  Background: #FFFFFF;
+}
+
+

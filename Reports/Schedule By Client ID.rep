@@ -1,0 +1,156 @@
+PL/SQL Developer Report
+
+[SQL]
+select * from schedule
+where clientid = &<name= "For Client "
+                    list= 
+                    "2190855,Avi Goldberg,
+                    6894158,Yoram Levy,
+                    8128654,Yossef Ventura"
+                    description = "yes" >
+
+[Options]
+Connect=False
+Username=
+Password=2094
+Database=
+ConnectAs=
+LockMode=0
+LockedPassword=2569
+BkgColor=-16777211
+BkgImage=
+FormLayout=False
+OnlyNBSP=False
+LeftMargin=0
+TopMargin=0
+PageBreak=0
+AddSQL=False
+HandleTags=True
+
+[Styles]
+
+{Title}
+Enabled=True
+Name=Report Title
+Description=Schedule By Client ID
+Style=Custom...
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Param}
+Enabled=True
+Name=Variables
+Description=
+Style=Custom...
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Table}
+Enabled=False
+Name=Tabular Tables
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Form}
+Enabled=False
+Name=Form Tables
+Description=
+Style=Custom...
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Field}
+Enabled=False
+Name=Default Field
+Description=
+Style=Custom...
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=AGENTID
+Description=Agent ID
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=CLIENTID
+Description=Client ID
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=MEETINGTIME
+Description=Meeting Time
+Style=
+HeaderStyle=
+Align=0
+Break=0
+Function=0
+Format=
+
+
+
+[CSS]
+**4-Report Title
+{
+  Background: #FFFFFF;
+  Color: #800000;
+  Font-size: 16pt;
+}
+
+**4-Variables
+{
+  Background: #FFFFFF;
+  Font-size: 11pt;
+}
+
+**4-Tabular Tables
+{
+  Background: #FFFFFF;
+}
+
+**4-Form Tables
+{
+  Background: #FFFFFF;
+}
+
+*4-Default Field
+{
+  Background: #FFFBF0;
+}
+
+*4-AGENTID
+{
+  Background: #008080;
+}
+
+

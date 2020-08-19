@@ -1,0 +1,5 @@
+SELECT surgeonID, COUNT(*)
+    FROM surgeon natural join surgery
+   WHERE surgerytype = 'CABG'
+GROUP BY surgeonID
+ORDER BY count (*) DESC

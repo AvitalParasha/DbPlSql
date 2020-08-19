@@ -1,0 +1,40 @@
+PL/SQL Developer Test script 3.0
+36
+-- Created on 5/26/2020 by TEST 
+DECLARE
+  numAptms integer := 0;
+   -- cursor
+  CURSOR c_agent IS
+  SELECT  *  FROM agent;
+   -- record    
+   r_agent c_agent%ROWTYPE;
+   
+BEGIN
+
+  -- reset salary of all agents
+  UPDATE agent SET SALARY = 0;
+
+  OPEN c_agent;
+  
+  LOOP
+    FETCH  c_agent  INTO r_agent;
+    EXIT WHEN c_agent%NOTFOUND;
+    numAptms := NumAptsInMonthAgent(r_agent.agentid, '2018', '06');
+      
+    --salary = rating * 800 + 90 * numAptms 
+    UPDATE 
+        agent
+    SET  
+        salary = SalaryCompution(numAptms,r_agent.rating );
+    WHERE 
+        agentid = r_agent.agentid;
+
+  END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE( 'Operation Completed Successfully!' );
+
+  CLOSE c_agent;
+
+END;
+0
+0

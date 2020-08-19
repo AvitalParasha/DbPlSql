@@ -1,0 +1,13 @@
+create or replace function numClients(cityName1 in varchar ) 
+return number is
+  
+   CURSOR c_client IS
+    SELECT  *  FROM client
+    where cityname = cityname1;
+   
+begin
+ 
+  return c_client%rowcount;
+  
+end numClients;
+/

@@ -1,0 +1,155 @@
+PL/SQL Developer Report
+
+[SQL]
+select * from surgery
+where surgeonId =  &<name = "Surgeon ID"
+                     required = "yes"
+                     default = "select min(surgeonId) from surgery">
+
+[Options]
+Connect=False
+Username=
+Password=2641
+Database=
+ConnectAs=Normal
+LockMode=0
+LockedPassword=2345
+BkgColor=14079660
+BkgImage=
+FormLayout=False
+OnlyNBSP=False
+LeftMargin=0
+TopMargin=0
+PageBreak=0
+AddSQL=False
+HandleTags=True
+
+[Styles]
+
+{Title}
+Enabled=True
+Name=Report Title
+Description=Surgery By Surgeon
+Style=Custom...
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Param}
+Enabled=True
+Name=Variables
+Description=
+Style=Custom...
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Table}
+Enabled=False
+Name=Tabular Tables
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Form}
+Enabled=False
+Name=Form Tables
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Field}
+Enabled=False
+Name=Default Field
+Description=
+Style=Custom...
+HeaderStyle=Custom...
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=SURGEONID
+Description=Surgeon ID
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=CLIENTID
+Description=Client ID
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=SURGERYTIME
+Description=Surgery Time
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=SURGERYTYPE
+Description=Surgery Type
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+
+
+[CSS]
+**4-Report Title
+{
+  Background: #A6CAF0;
+  Color: #008080;
+  Font-size: 16pt;
+}
+
+**4-Variables
+{
+  Background: #A6CAF0;
+  Color: #000000;
+  Font-size: 12pt;
+}
+
+*5-Default Field
+{
+  Background: #008080;
+}
+
+*4-Default Field
+{
+  Background: #A6CAF0;
+}
+
+
